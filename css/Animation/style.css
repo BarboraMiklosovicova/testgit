@@ -1,0 +1,38 @@
+.parent {
+  background-color: beige;
+  height: 400px;
+  width: 400px;
+}
+
+.child {
+  background-color: pink;
+  height: 50%;
+  width: 50%;
+}
+
+.parent:hover .child { 
+  animation: left-to-right 1s ease-in forwards 3 alternate;
+}
+/* forwards: keep all the properties in 100% transform*/
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateY(100%);
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+/* To create a transition effect, you must specify two things: 
+1. the css property you want to add an effect to
+2. the duration of the effect
+When you hover over the parent, the child move all the way to thr rigt side and back. */

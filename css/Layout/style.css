@@ -1,0 +1,70 @@
+body {
+  width: 750px;
+  font-family: Arial, Verdana, sans-serif;
+  color: #665544;
+}
+h1 {
+  background-color: #efefef;
+  padding: 10px;
+}
+
+blockquote {
+  float: right;
+  width: 275px;
+  font-size: 115%;
+  font-style: italic;
+  font-size: Georgia, Times, serif;
+  margin: 0px 0px 10px 10px;
+  padding: 10px;
+  border-top: 1px solid #665544;
+  border-bottom: 1px solid #665544
+}
+/* The float property allows you to take an element in normal flow and place it as far to the left or right of the containing element as possible. */
+
+p {
+  width: 450px;
+}
+
+/* In normal flow, each block-level element sits on top of the next one. */
+
+p.relative {
+  position: relative;
+  top: 10px;
+  left: 100px;
+}
+/* Relative positioning moves an elelent in relation to where it would have been in normal flow. */
+
+/* When the position property is given a value of a absolute, the box is taken out of normal flow and no longer affects the position of other elements on the page. */
+
+p.third {
+  width: 230px;
+  float: right;
+  margin: 5px;
+  padding: 5px;
+  background-color: #efefef;
+}
+
+p.last {
+  width: 230px;
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  background-color: #efefef;
+}
+
+h1 {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  background-color: #efefef;
+}
+
+/* Fixed position is a type of absolute positioning that requires the position property to have a value of fixed. */
+
+p.first {
+  margin-top: 75px;
+}
+
