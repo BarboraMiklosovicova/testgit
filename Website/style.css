@@ -1,0 +1,116 @@
+
+body {
+  background-color: antiquewhite;
+}
+
+#service-image {
+  background: url("/Website/assets/levandula.webp");
+  background-size: cover;
+  opacity: 0.8;
+  background-color: pink;
+  height: 400px;
+  width: 70%;
+  display: inline-block; 
+  
+}
+
+#about-img {
+ height: 300px;
+ width: 60vw;
+ border: 6px solid green;
+ padding: 40px 30px 20px 10px;
+ margin: 80px 40px;
+ float:inline-start;
+
+}
+#google-link {
+  float: right;
+}
+
+.container {
+  background-color: white;
+  margin: 10px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center; 
+}
+
+.container-item {
+ background-color: green;
+ color: black;
+ font-size: 25px;
+ text-align: center;
+
+ width: 70px;
+ line-height: 50px;
+ margin: 10px;
+}
+
+.grid-container {
+  background-color: whitesmoke;
+  margin: 10px;
+  height: 500px;
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  
+}
+
+.grid-item {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+
+  width: 70px;
+  line-height: 40px;
+  margin: 10px;
+}
+
+.contact {
+  margin: 10px;
+  line-height: 40px;
+}
+.submit-botton {
+  margin: 20px 10px;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 20px;
+  color: white;
+  background: rgba(42, 175, 219, 0.887);
+  transition: all 1s ease;
+}
+
+.submit-botton:hover {
+background: lightblue;
+padding: 20px 30px;
+}
+
+.subtitle {
+  /*animation-name: red-to-black;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;*/
+  animation: red-to-black 4s linear 0s 2 alternate-reverse;
+}
+
+@keyframes red-to-black {
+  0% {
+    background: red;
+    transform: translate(0px, 0px);
+  }
+  50% {
+    background: yellow;
+    transform: translate(10px, 10px);
+  }
+  100% {
+    background: black;
+    transform: translate(20px,20px);
+  }
+}
