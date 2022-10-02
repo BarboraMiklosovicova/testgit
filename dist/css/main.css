@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar {
+  text-decoration: none;
+  text-align: right;
+  border-bottom: solid 1px white;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url(/dist/assets/negative-space-black-forest-dawn.jpg) center;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.home p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  margin: 30px;
+}
+
+.hem {
+  margin: 10px;
+  padding-top: 200px;
+}
+
+.item {
+  margin: 10px;
+  padding: 30px;
+  justify-content: space-between;
+  width: 350px;
+  height: 400px;
+  border: solid 1px white;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  box-shadow: 0 0 20px #777777;
+  height: 250px;
+  width: 250px;
+}
+
+.about p {
+  font-size: 10px;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  background-color: #D4D4D4;
+  border-radius: 4%;
+}
+
+.about h5 {
+  margin-left: 40%;
+}
+
+footer {
+  color: white;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 50px;
+  gap: 60px;
+  line-height: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.items {
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=main.css.map */

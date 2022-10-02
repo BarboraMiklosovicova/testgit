@@ -1,0 +1,37 @@
+@import 'home';
+@import 'about';
+
+
+footer {
+  color: white;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 50px;
+  gap: 60px;
+  line-height: 25px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+ 
+  
+
+}
+
+.items {
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+}
+  

@@ -1,0 +1,48 @@
+.item {
+  
+  margin: 10px;
+  padding: 30px;
+  justify-content: space-between;
+  width: 350px;
+  height: 400px;
+  border: solid 1px white;
+  
+
+  
+
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+img {
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  box-shadow: 0 0 20px #777777;
+  height: 250px;
+  width: 250px;
+  
+
+
+}
+
+.about p {
+  font-size: 10px;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  background-color: #D4D4D4;
+  border-radius: 4%;
+ 
+}
+
+
+.about h5 {
+  margin-left: 40%;
+}
