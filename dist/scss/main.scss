@@ -1,8 +1,11 @@
 @import 'home';
 @import 'about';
+@import 'navbar';
 
-
-footer {
+html {
+  scroll-behavior: smooth;
+}
+#footer {
   color: white;
   background: black;
   display: flex;
@@ -32,6 +35,8 @@ footer {
   .container {
     flex-direction: column;
     margin-bottom: 0px;
+    align-items: lef;
+    margin-left: 10%;
   }
 }
   

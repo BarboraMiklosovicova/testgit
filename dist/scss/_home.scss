@@ -3,12 +3,6 @@ body {
   padding: 0;
 }
 
-.menu-bar {
-text-decoration: none;
-text-align: right;
-border-bottom: solid 1px white;
-
-}
 
 
 .home {
@@ -40,5 +34,17 @@ h1 {
 .hem {
   margin: 10px;
   padding-top:200px;
+}
+
+#down {
+  position:relative;
+  text-align: center;
+  top: 200px;
+  margin-left: 50%;
+  
+
+}
+ul {
+  
 }
 

@@ -3,20 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  
+
    <title>Färdig design</title>
+   <script src="https://kit.fontawesome.com/2ed289a7d6.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="icon" type="image/x-icon" href="assets/leaf.ico">
+   
+
 
 </head>
 <body>
   <section class="home">
-    <header>
-      <nav class="menu-bar">
-       <li><a href="#">Hem</a></li>
-       <li><a href="#">Om</a></li>
-       <li><a href="#">Kontakt</a></li>
-     </nav>
-   </header>
+    <section class="top-nav">
+      <span> </span>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#">Hem</a></li>
+        <li><a href="#team">Om</a></li>
+        <li><a href="#footer">Kontakt</a></li>
+      </ul>
+    </section>
+    
 
   
     <section class="hem">
@@ -24,9 +36,10 @@
       <p>A journey throught time and sheep</p>
       <p>To see how ...cotton ... is mage, made I mean...</p>
     </section>
+    <a href="#team" id="down"><i class="fa-solid fa-circle-arrow-down"></i></a>
   </section>
 
-    <section>
+    <section id="team">
       <h1>Träffa laget</h1>
     </section>
 
@@ -53,26 +66,29 @@
         <h5>Sebastian</h5>
         <img src="../dist/assets/Sebastian_Square.png" alt="Sebastian" width="150px">
         <p>En av våra utbildare som har stor erfarenhet av ganska många saker</p>
-      </section>
+        <div id="down">
+        
+        
     </article>
 
-    <footer>
+    <footer id="footer">
       <section class="container">
-        <div class="items">
-        Tegel Consulting<br>
-        Agatvägen 18<br>
-        168 60 Bromma
-        </div>
-        <div class="items">
-          info@tegelconsultiong.se<br>
-          070-123 456 78
-        </div>
-        <div class="items">
-          Instagram<br>
-          Twitter<br>
-          Facebbok
-        </div>
-      </section>
+      
+      <article>
+        <p>Tegel Consulting AB</p>
+        <p>Agatvägen 18</p>
+        <p>168 60 Bromma</p>
+      </article>
+      <article>
+        <p>info at tegelconsulting.se</p>
+        <p>070-123 456 78</p>
+      </article>
+      <article>
+        <p><i class="fa-brands fa-instagram"></i>Instagram</p>
+        <p><i class="fa-brands fa-twitter"></i>Twitter</p>
+        <p><i class="fa-brands fa-facebook-f"></i>Instagram</p>
+      </article> 
+    </section>
     </footer>
 
     
