@@ -1,0 +1,33 @@
+@use "variables" as v;
+
+@mixin top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: v.$primary;
+  height: 60px;
+  padding: 1em;
+  opacity: 0.9;
+}
+
+@mixin background-image {
+  background: url(./../assets/negative-space-black-forest-dawn.jpg) center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+
+@mixin down {
+  position:relative;
+  text-align: center;
+  top: 150px;
+  margin-left: 50%;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
