@@ -8,68 +8,73 @@
 
    <title>Färdig design</title>
    <script src="https://kit.fontawesome.com/2ed289a7d6.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="icon" type="image/x-icon" href="assets/leaf.ico">
+   <link rel="stylesheet" href="scss/main.scss">
+   <!-- <link rel="icon" type="image/x-icon" href="assets/leaf.ico"> -->
    
-
-
 </head>
+
+
 <body>
+
+  <!--Navbar-->
+  
   <section class="home">
     <section class="top-nav">
       <span> </span>
       <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
       <ul class="menu">
         <li><a href="#">Hem</a></li>
-        <li><a href="#team">Om</a></li>
+        <li><a href="#team-page">Om</a></li>
         <li><a href="#footer">Kontakt</a></li>
       </ul>
     </section>
     
-
+    <!--Home page section-->
   
     <section class="hem">
       <h1>Welcome to nature</h1>
       <p>A journey throught time and sheep</p>
       <p>To see how ...cotton ... is mage, made I mean...</p>
     </section>
-    <a href="#team" id="down"><i class="fa-solid fa-circle-arrow-down"></i></a>
+      <a href="#team" id="down"><i class="fa-solid fa-circle-arrow-down"></i></a>
   </section>
 
-    <section id="team">
-      <h1>Träffa laget</h1>
-    </section>
+    <!--Meet the team section-->
 
+    
     <article class="about">
-      <section class="item">
+      <a id="team-page"></a>
+        <h1>Träffa laget</h1>
+    
+      <section id="item">
         <h5>Rakib</h5>
-        <img src="../dist/assets/Rakib_Square.png" alt="Rakib" width="150px">
+        <img src="assets/Rakib_Square.png" alt="Rakib" width="150px">
         <p><span class="quotation">&#8221;</span>Rakib är vår vassaste node-utveklare och håller ständigt ett öga på nya tekniker</p>
       </section>
       
-      <section class="item">
+      <section id="item">
         <h5>Alexandra</h5>
-        <img src="../dist/assets/Alexandra_Square.png" alt="Alexandra" width="150px">
+        <img src="assets/Alexandra_Square.png" alt="Alexandra" width="150px">
         <p>Alexandra håller reda på alla överallt och ser till att det flyter</p>
       </section>
       
-      <section class="item">
+      <section id="item">
         <h5>Lasse</h5>
-        <img src="../dist/assets/NoPerson_Square.png" alt="Lasse" width="150px">
+        <img src="assets/NoPerson_Square.png" alt="Lasse" width="150px">
         <p>Gör övriga saker... mestadels</p>
       </section>
       
-      <section class="item">
+      <section id="item">
         <h5>Sebastian</h5>
-        <img src="../dist/assets/Sebastian_Square.png" alt="Sebastian" width="150px">
+        <img src="assets/Sebastian_Square.png" alt="Sebastian" width="150px">
         <p>En av våra utbildare som har stor erfarenhet av ganska många saker</p>
-        <div id="down">
-        
         
     </article>
+
+    <!--Footer-->
 
     <footer id="footer">
       <section class="container">

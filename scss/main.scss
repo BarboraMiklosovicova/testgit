@@ -1,3 +1,5 @@
+ @use "variables" as v;
+ @use "mixin" as mix;
 
 body {
   margin: 0;
@@ -11,23 +13,17 @@ html {
 /* Navbar*/
 
 .top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  height: 60px;
-  padding: 1em;
-  opacity: 0.9;
+  @include mix.top-nav;
+  
 }
 
 a {
-  color: #fff;
+  color: v.$primary;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: #fff;
+  color: v.$primary;
 }
 .menu {
   display: flex;
@@ -59,7 +55,7 @@ a:hover {
 
 .menu-button, .menu-button::before, .menu-button::after {
   display: block;
-  background-color: white;
+  background-color: v.$primary;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -121,18 +117,15 @@ a:hover {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: #fff;
+    color: v.$primary;
   }
 }
 
 /*Home page section*/
 
 .home {
-  height: 100vh;
-  width: 100%;
-  background: url(/dist/assets/negative-space-black-forest-dawn.jpg) center;
-  background-size: cover;
-  color: white;
+  @include mix.background-image;
+  color: v.$primary;
 }
 
 .hem {
@@ -154,37 +147,50 @@ h1 {
 }
 
 #down {
-  position:relative;
-  text-align: center;
-  top: 200px;
-  margin-left: 50%
+  @include mix.down;
 }
+
+
 
 /*Meet the team section*/
 
 .item {
   
-  margin: 10px;
-  padding: 30px;
-  justify-content: space-between;
-  width: 350px;
-  height: 400px;
-  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .about {
-  width: 100%;
+  
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+@media screen and (min-width: 768px){
+  
+  #item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+  }
+ 
+ 
 }
 
 img {
   border-radius: 50%;
   display: flex;
   margin: auto;
-  box-shadow: 0 0 20px #777777;
+  box-shadow: 0 0 20px v.$box-shadow-color;
   height: 250px;
   width: 250px;
 }
@@ -194,7 +200,7 @@ img {
   text-align: center;
   padding: 30px;
   margin: 30px;
-  background-color: #cbcbcb;
+  background-color: v.$box-color;
   border-radius: 4%;
 }
 
@@ -228,10 +234,10 @@ img {
 
 #footer {
   color: white;
-  background: black;
+  background: v.$primary-pink;
   flex-direction: column;
   height: auto;
   padding: 50px;
   gap: 60px;
-  line-height: 25px;
-}
+  line-height: 25px; 
+} 
