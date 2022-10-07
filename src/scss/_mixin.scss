@@ -31,3 +31,39 @@
 
 }
 
+@mixin container {
+  background-color: v.$primary;
+  height: 100%;
+  margin-bottom: 50px;
+  padding: 20px;
+  text-align: center;
+
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin paragraph_box {
+  font-size: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: v.$box-color;
+    width: 250px;
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin img {
+  background-size: cover;
+  background-color: v.$box-color;
+  border-radius: 50%;
+  box-shadow: 0 0 30px v.$box-shadow-color;
+  height: 200px;
+  width: 200px;
+}
+

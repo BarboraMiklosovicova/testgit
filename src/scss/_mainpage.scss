@@ -1,0 +1,126 @@
+
+ @use "variables" as v;
+ @use "mixin" as mix;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/*Home page section*/
+
+.home {
+  @include mix.background-image;
+  color: v.$primary;
+}
+
+.hem {
+  margin: 10px;
+  padding-top:200px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 0px 10px;
+}
+
+.home p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  margin: 30px;
+}
+
+#down {
+  @include mix.down;
+}
+
+/* The team */
+
+element.style {
+  background-image: url(/src/assets/Sebastian_Square.png);
+}
+
+.about {
+  @include mix.container;
+
+    & > h1 {
+    margin-top: 10px;
+  }
+}
+  
+
+.team_paragraph {
+    @include mix.paragraph_box;
+    
+    .quotation {
+      font-size: 70px;
+    }
+  }
+
+
+
+.portrait {
+  @include mix.img;
+  margin:auto;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 200px 200px;
+    flex-flow: wrap;
+  }
+
+  .item {
+    width: 50%;
+    
+  }
+
+}
+
+
+
+/*Footer*/
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+#items {
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 0px;
+    align-items: lef;
+    margin-left: 10%;
+  }
+}
+
+#footer {
+  color: v.$primary;
+  background: v.$secondary;
+  flex-direction: column;
+  height: auto;
+  padding: 50px;
+  gap: 60px;
+  line-height: 25px; 
+} 
